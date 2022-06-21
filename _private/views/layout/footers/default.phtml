@@ -1,0 +1,78 @@
+		<!-- ======= Footer ======= -->
+		<footer id="footer">
+			<div class="footer-top">
+			<div class="container">
+				<div class="row">
+				<div class="col-lg-3 col-md-6 footer-contact">
+					<h3><?php echo $this->titulo; ?></h3>
+					<p>
+					Avda. Santa Rosa #349<br>
+					Santiago<br>
+					Chile <br><br>
+					<strong>Phone:</strong> +56 9 3058 8956<br>
+					<strong>Email:</strong> orojas@osvaldorojas.com<br>
+					</p>
+				</div>
+				<div class="col-lg-3 col-md-6 footer-links">
+					<h4>Enlaces Útiles</h4>
+					<ul>
+					<li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+					<li><i class="bx bx-chevron-right"></i> <a href="#">Catálogo</a></li>
+					<li><i class="bx bx-chevron-right"></i> <a href="#">Contacto</a></li>
+					<li><i class="bx bx-chevron-right"></i> <a href="#">Registro</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-6 footer-links">
+					<h4>Otros Servicios</h4>
+					<ul>
+					<li><i class="bx bx-chevron-right"></i> <a href="#">Web Development - PHP</a></li>
+					<li><i class="bx bx-chevron-right"></i> <a href="#">Web Development - Python</a></li>
+					<li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-6 footer-links">
+					<h4>Redes Sociales</h4>
+					<p>Puedes Seguirnos en nuestras redes Sociales</p>
+					<div class="social-links mt-3">
+					<a href="https://twitter.com/?lang=es" class="twitter"><i class="bx bxl-twitter"></i></a>
+					<a href="https://facebook.com/?hl=es" class="facebook"><i class="bx bxl-facebook"></i></a>
+					<a href="https://www.instagram.com/?hl=es" class="instagram"><i class="bx bxl-instagram"></i></a>
+					<a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+					<a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+					</div>
+				</div>
+				</div>
+			</div>
+			</div>
+			<div class="container footer-bottom clearfix">
+			<div class="copyright">
+				&copy; Copyright <strong><span><a href="https://www.osvaldorojas.com">www.osvaldorojas.com</a></span></strong>. All Rights Reserved
+			</div>
+			</div>
+		</footer><!-- End Footer -->
+
+		<a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+		<div id="preloader"></div>
+
+		<!-- Vendor JS Files -->
+		<script src="<?php echo VDO; ?>jquery/jquery.min.js"></script>
+		<script src="<?php echo VDO; ?>bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="<?php echo VDO; ?>jquery.easing/jquery.easing.min.js"></script>
+		<script src="<?php echo VDO; ?>php-email-form/validate.js"></script>
+		<script src="<?php echo VDO; ?>waypoints/jquery.waypoints.min.js"></script>
+		<script src="<?php echo VDO; ?>isotope-layout/isotope.pkgd.min.js"></script>
+		<script src="<?php echo VDO; ?>venobox/venobox.min.js"></script>
+		<script src="<?php echo VDO; ?>owl.carousel/owl.carousel.min.js"></script>
+		<script src="<?php echo VDO; ?>aos/aos.js"></script>
+
+		<!-- Template Main JS File -->
+		<script src="<?php echo JSC; ?>main.js"></script>
+		<script src="<?php echo JSC; ?>awesome.js"></script>
+		<?php
+			if (isset($this->controlador)){ ?>
+		<script src="<?php echo JSC . $this->controlador; ?>/jsc.js"></script>
+		<?php
+			}
+		?>
+	</body>
+</html>
